@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    
+    <xsd:element name="centro">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="nombre" minOccurs="1" maxOccurs="1"/>
+                <xsd:element name="web" minOccurs="1" maxOccurs="1"/>
+                <xsd:element name="ciclos" minOccurs="1" maxOccurs="1">
+                    <xsd:complexType>
+                        <xsd:attribute name="id" type="xsd:string"/>
+                        <xsd:sequence>
+                            <xsd:element name="nombre" minOccurs="1" maxOccurs="1"/>
+                            <xsd:element name="grado" minOccurs="1" maxOccurs="1"/>
+                            <xsd:element name="decretoTitulo">
+                                <xsd:complexType>
+                                    <xsd:attribute name="anio"/>
+                                </xsd:complexType>
+                            </xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+                
+                <xsd:element name="modulos">
+                    <xsd:complexType>
+                        <xsd:element name="modulo">
+                            <xsd:complexType>
+                                <xsd:attribute name="id" type="xsd:Integer"/>
+                                <xsd:element name="nombre" minOccurs="1" maxOccurs="1"/>
+                                <xsd:element name="curso"
+                            </xsd:complexType>
+                        </xsd:element>
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    
+
+
+</xsd:schema>
