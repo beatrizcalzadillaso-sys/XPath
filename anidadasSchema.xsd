@@ -27,7 +27,8 @@
                             <xsd:complexType>
                                 <xsd:attribute name="id" type="xsd:Integer"/>
                                 <xsd:element name="nombre" minOccurs="1" maxOccurs="1"/>
-                                <xsd:element name="curso"
+                                <xsd:element name="curso" minOccurs="1" maxOccurs="1"/>
+                                
                             </xsd:complexType>
                         </xsd:element>
                     </xsd:complexType>
